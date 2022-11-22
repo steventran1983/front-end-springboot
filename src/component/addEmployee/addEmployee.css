@@ -1,0 +1,21 @@
+.submit {
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.6rem;
+  padding-top: 3.2rem;
+  font-size: 1.6rem;
+}
+
+.input{
+  height: 3.2rem;
+  padding-left: 1.6rem;
+  font-size: 1.6rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
+
+
+.submit-button{
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
+}
