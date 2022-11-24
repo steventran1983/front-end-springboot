@@ -1,10 +1,15 @@
-import React from "react";
+import React, {useRef} from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import "./addEmployee.css";
 
 const AddEmployee = () => {
-  console.log("Thang Cong TU");
+  const emailRef = useRef(null)
+  const fNameRef = useRef(null)
+  const lNameRef = useRef(null)
+  const genderRef = useRef(null)
+  const phoneRef = useRef(null)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     const employee = {
@@ -21,10 +26,15 @@ const AddEmployee = () => {
       const res = await axios.post("http://localhost:8080/employees", employee);
       console.log(res.data)
       toast.success("Employee create successfully");
+      e.target.reset()
+      emailRef.current.focus()
+
     } catch (err) {
       console.log("err");
       toast.error("Employee create failed");
     }
+
+
   };
   return (
     <section className="addemployee-container grid">
@@ -33,7 +43,7 @@ const AddEmployee = () => {
         <form onSubmit={handleSubmit} className="adding-form submit">
           <label className="label">
             Email
-            <input className="input" name="empEmail" type="email" />
+            <input className="input" name="empEmail" type="email" ref={emailRef} />
           </label>
           <label className="label">
             First Name

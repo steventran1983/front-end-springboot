@@ -31,9 +31,9 @@ const GetEmployee = () => {
     }
   };
 
-  useEffect(() => {
-    handleGetEmployees();
-  }, [load]);
+  // useEffect(() => {
+  //   handleGetEmployees();
+  // }, [load]);
 
   return (
     <section className="get-employee grid">
@@ -49,12 +49,13 @@ const GetEmployee = () => {
         {toggle ? (
           <ul className="get-employees-list">
             <li className="get-employee-item">
-              <p className="employee-info">Employee ID</p>
-              <p className="employee-info">Employee Email</p>
-              <p className="employee-info">Employee FName</p>
-              <p className="employee-info">Employee LName</p>
-              <p className="employee-info">Employee Gender</p>
-              <p className="employee-info">Employee Phone#</p>
+              <p className="employee-info">Emp ID</p>
+              <p className="employee-info">Emp Email</p>
+              <p className="employee-info">FName</p>
+              <p className="employee-info">LName</p>
+              <p className="employee-info">Gender</p>
+              <p className="employee-info">Phone#</p>
+              <p className="employee-info">Delete</p>
             </li>
             {employees.map((employee, index) => {
               const {

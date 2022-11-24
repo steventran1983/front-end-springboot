@@ -26,18 +26,18 @@
 }
 .get-employee-item{
   display: flex;
-  justify-content: center;
+  /*justify-content: space-between;*/
   align-items: center;
   font-size: 1.6rem;
   row-gap: 1.6rem;
   border-bottom: 1px solid black;
   padding: 0.8rem;
-  column-gap: 4.8rem;
+  /*column-gap: 4.8rem;*/
   
   
 }
 
 .employee-info{
-  flex: 1;
-  text-align: left;
+  flex: 1 auto;
+  /*text-align: center;*/
 }
