@@ -1,0 +1,67 @@
+.modify-container{
+    transition: opacity 0.2s ease-out;
+    background: rgba(0,0,0, 0.5);
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    top: 0;
+
+}
+
+.modify-modal {
+    padding-top: 1.6rem;
+    padding-bottom: 1.6rem;
+    background: #ffffff;
+    border-radius: 0.5em;
+    box-shadow: 0 10px 20px rgba(0,0,0, 0.2);
+    left: 50%;
+    max-width: 90%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    max-height: 90vh;
+    text-align: left;
+}
+
+.close-button{
+    position: fixed;
+    top:1.6rem;
+    right: 1.6rem;
+    font-size: 1.6rem;
+    padding: 0.8rem;
+}
+
+
+.adding-form{
+    padding:3.2rem;
+    margin-top: 3.2rem;
+}
+
+.input-form{
+    padding: 0.8rem;
+    font-size: 1.6rem;
+    display: block;
+    margin-top: 0.8rem;
+    margin-bottom: 0.8rem;
+    max-width: 100%;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+
+}
+
+.title{
+    padding-top: 1.6rem;
+    text-align: center;
+    font-size: 2.4rem;
+}
+
+.avatar{
+    text-align: center;
+    padding-top: 3.2rem;
+    font-size: 3.2rem;
+    color:#1567C2;;
+}

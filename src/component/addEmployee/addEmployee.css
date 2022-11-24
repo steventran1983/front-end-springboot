@@ -1,21 +1,59 @@
-.submit {
+.addemployee{
+  display: flex;
+  justify-content: center;
+
+}
+.addemp-container{
   display: flex;
   flex-direction: column;
-  row-gap: 1.6rem;
+  justify-content: center;
+  width: 600px;
+  /*background: #61dafb;*/
+}
+
+.adding-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  row-gap: 3.2rem;
   padding-top: 3.2rem;
   font-size: 1.6rem;
 }
 
-.input{
+
+.label{
+  width: 100%;
+  text-align: left;
+}
+.input-form-add{
   height: 3.2rem;
   padding-left: 1.6rem;
   font-size: 1.6rem;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+  display: block;
+  width: 100%;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+
 }
 
 
 .submit-button{
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
+  width: 100%;
+  font-size: 1.6rem;
+  background: #1567C2 ;
+  color: white;
+}
+
+.add-title{
+  padding-top: 3.2rem;
+  text-align: center;
+  font-size: 2.4rem;
+
 }

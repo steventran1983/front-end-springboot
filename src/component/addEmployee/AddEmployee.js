@@ -2,6 +2,8 @@ import React, {useRef} from "react";
 import axios from "axios";
 import toast from "react-hot-toast";
 import "./addEmployee.css";
+import {FaUserPlus} from 'react-icons/fa';
+
 
 const AddEmployee = () => {
   const emailRef = useRef(null)
@@ -37,31 +39,36 @@ const AddEmployee = () => {
 
   };
   return (
-    <section className="addemployee-container grid">
-      <div className="add-title">
-        <p>Adding New Employee</p>
+    <section className="addemployee grid">
+      <div className="addemp-container">
+        <div className="add-title">
+          <p>Adding New Employee</p>
+            <div className="avatar">
+              <FaUserPlus/>
+          </div>
+        </div>
         <form onSubmit={handleSubmit} className="adding-form submit">
           <label className="label">
             Email
-            <input className="input" name="empEmail" type="email" ref={emailRef} />
+            <input className="input-form-add" name="empEmail" type="email" ref={emailRef} />
           </label>
           <label className="label">
             First Name
-            <input className="input" name="empFirstName" type="text" />
+            <input className="input-form-add" name="empFirstName" type="text" />
           </label>
 
           <label className="label">
             Last Name
-            <input className="input" name="empLastName" type="text" />
+            <input className="input-form-add" name="empLastName" type="text" />
           </label>
 
           <label className="label">
             Gender
-            <input className="input" name="empGender" type="text" />
+            <input className="input-form-add" name="empGender" type="text" />
           </label>
           <label className="label">
             Phone Number
-            <input className="input" name="empPhoneNumber" type="text" />
+            <input className="input-form-add" name="empPhoneNumber" type="text" />
           </label>
 
           <button type="submit" className="submit-button">

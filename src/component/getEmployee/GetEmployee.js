@@ -4,10 +4,17 @@ import toast from "react-hot-toast";
 import AddEmployee from "../addEmployee/AddEmployee";
 import "./getemployee.css";
 import GetOneEmployee from "./GetOneEmployee";
+import ModifyEmployee from "../modifyEmployee/ModifyEmployee";
 const GetEmployee = () => {
   const [load, setLoad] = useState(false);
   const [toggle, setToggle] = useState(true);
   const [employees, setEmployees] = useState([]);
+  const [modify,setModify] = useState(false)
+  const [employeeId,setEmployeeId] = useState("")
+  const handleModify = (empId) => {
+    setModify(true)
+    setEmployeeId(empId)
+  }
 
   const handleGetEmployees = async () => {
     try {
@@ -31,9 +38,9 @@ const GetEmployee = () => {
     }
   };
 
-  // useEffect(() => {
-  //   handleGetEmployees();
-  // }, [load]);
+  useEffect( () => {
+    handleGetEmployees();
+  }, [load]);
 
   return (
     <section className="get-employee grid">
@@ -50,11 +57,12 @@ const GetEmployee = () => {
           <ul className="get-employees-list">
             <li className="get-employee-item">
               <p className="employee-info">Emp ID</p>
-              <p className="employee-info">Emp Email</p>
+              <p className="employee-info email">Emp Email</p>
               <p className="employee-info">FName</p>
               <p className="employee-info">LName</p>
               <p className="employee-info">Gender</p>
               <p className="employee-info">Phone#</p>
+              <p className="employee-info">Modify</p>
               <p className="employee-info">Delete</p>
             </li>
             {employees.map((employee, index) => {
@@ -69,12 +77,17 @@ const GetEmployee = () => {
               return (
                 <li key={index} className="get-employee-item">
                   <p className="employee-info">{empId}</p>
-                  <p className="employee-info">{empEmail}</p>
+                  <p className="employee-info email">{empEmail}</p>
                   <p className="employee-info">{empFirstName}</p>
                   <p className="employee-info">{empLastName}</p>
                   <p className="employee-info">{empGender}</p>
                   <p className="employee-info">{empPhoneNumber}</p>
-                  <button onClick={() => handleDelete(empId)}> Delete</button>
+                  <p className="employee-info">
+                    <button onClick={() => handleModify(empId)} className="btn-delete"> Modify</button>
+                  </p>
+                  <p className="employee-info">
+                    <button onClick={() => handleDelete(empId)} className="btn-delete"> Delete</button>
+                  </p>
                 </li>
               );
             })}
@@ -83,6 +96,7 @@ const GetEmployee = () => {
           <GetOneEmployee />
         )}
       </div>
+      {modify ?  <ModifyEmployee data = {{setModify,employeeId}}/> : ""}
     </section>
   );
 };
