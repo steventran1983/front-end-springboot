@@ -5,26 +5,16 @@ const NavBar = () => {
   return (
     <div className="nav-container grid">
       <div className="nav-header">
-        <h2>Thang Tran</h2>
+        <h2 className="header-title">Thang Tran</h2>
         <ul className="nav-list">
           <li className="nav-item">
             <button className="nav-button">
-              <Link to="/">Adding Employee</Link>
+              <Link to="/" className="nav-link">Adding Employee</Link>
             </button>
           </li>
           <li className="nav-item">
             <button className="nav-button">
-              <Link to="/employees">Get Employees</Link>
-            </button>
-          </li>
-          <li className="nav-item">
-            <button className="nav-button">
-              <Link to="/delete">Delete Employee</Link>
-            </button>
-          </li>
-          <li className="nav-item">
-            <button className="nav-button">
-              <Link to="/modify">Modify Employee</Link>
+              <Link to="/employees" className="nav-link">Get Employees</Link>
             </button>
           </li>
         </ul>

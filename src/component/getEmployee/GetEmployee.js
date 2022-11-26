@@ -10,6 +10,7 @@ const GetEmployee = () => {
   const [toggle, setToggle] = useState(true);
   const [employees, setEmployees] = useState([]);
   const [modify,setModify] = useState(false)
+  const [update,setUpdate] = useState(false)
   const [employeeId,setEmployeeId] = useState("")
   const handleModify = (empId) => {
     setModify(true)
@@ -40,7 +41,7 @@ const GetEmployee = () => {
 
   useEffect( () => {
     handleGetEmployees();
-  }, [load]);
+  }, [load,update]);
 
   return (
     <section className="get-employee grid">
@@ -56,7 +57,8 @@ const GetEmployee = () => {
         {toggle ? (
           <ul className="get-employees-list">
             <li className="get-employee-item">
-              <p className="employee-info">Emp ID</p>
+
+              <p className="employee-info">ID</p>
               <p className="employee-info email">Emp Email</p>
               <p className="employee-info">FName</p>
               <p className="employee-info">LName</p>
@@ -81,9 +83,9 @@ const GetEmployee = () => {
                   <p className="employee-info">{empFirstName}</p>
                   <p className="employee-info">{empLastName}</p>
                   <p className="employee-info">{empGender}</p>
-                  <p className="employee-info">{empPhoneNumber}</p>
+                  <p className="employee-info phone">{empPhoneNumber}</p>
                   <p className="employee-info">
-                    <button onClick={() => handleModify(empId)} className="btn-delete"> Modify</button>
+                    <button onClick={() => handleModify(empId)} className="btn-modify"> Modify</button>
                   </p>
                   <p className="employee-info">
                     <button onClick={() => handleDelete(empId)} className="btn-delete"> Delete</button>
@@ -96,7 +98,7 @@ const GetEmployee = () => {
           <GetOneEmployee />
         )}
       </div>
-      {modify ?  <ModifyEmployee data = {{setModify,employeeId}}/> : ""}
+      {modify ?  <ModifyEmployee data = {{setModify,employeeId,update,setUpdate}}/> : ""}
     </section>
   );
 };

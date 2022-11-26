@@ -5,7 +5,7 @@ import { FaTimes,FaUserEdit } from 'react-icons/fa';
 import "./modifyEmployee.css"
 
 const ModifyEmployee = ({data}) => {
-  const {setModify,employeeId} = data
+  const {setModify,employeeId,setUpdate,update} = data
 
   const handleModify = async (e) => {
     e.preventDefault()
@@ -21,6 +21,7 @@ const ModifyEmployee = ({data}) => {
     try{
       await axios.put("http://localhost:8080/employees",newEmployee)
       toast.success("Employee create successfully");
+      setUpdate(!update)
       setModify(false)
     }catch (err) {
       toast.error("Employee modify false");

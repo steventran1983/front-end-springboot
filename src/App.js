@@ -23,8 +23,6 @@ function App() {
       <Routes>
         <Route path="/" element={<AddEmployee />} />
         <Route path="/employees" element={<GetEmployee />} />
-        <Route path="/delete" element={<Delete />} />
-        <Route path="/modify" element={<ModifyEmployee />} />
       </Routes>
     </main>
   );
