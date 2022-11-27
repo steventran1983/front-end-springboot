@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/front-end-springboot/static/css/main.c032d9f7.css",
+    "main.js": "/front-end-springboot/static/js/main.b4cc14e9.js",
+    "static/js/787.a864ef51.chunk.js": "/front-end-springboot/static/js/787.a864ef51.chunk.js",
+    "index.html": "/front-end-springboot/index.html",
+    "main.c032d9f7.css.map": "/front-end-springboot/static/css/main.c032d9f7.css.map",
+    "main.b4cc14e9.js.map": "/front-end-springboot/static/js/main.b4cc14e9.js.map",
+    "787.a864ef51.chunk.js.map": "/front-end-springboot/static/js/787.a864ef51.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c032d9f7.css",
+    "static/js/main.b4cc14e9.js"
+  ]
+}
