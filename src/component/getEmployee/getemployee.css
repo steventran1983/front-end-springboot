@@ -1,122 +1,124 @@
-.get-employee-conatiner{
-  margin-top: 3.2rem;
+.get-employee-conatiner {
+    margin-top: 3.2rem;
 }
 
 
-.getemployee-button{
-  display: flex;
-  justify-content: center;
-  column-gap: 1.6rem;
+.getemployee-button {
+    display: flex;
+    justify-content: center;
+    column-gap: 1.6rem;
 }
 
-.btn-get-employee{
-  padding: 1.6rem 3.2rem;
-  font-size: 1.6rem;
-  border-radius: 0.8rem;
-  background: #198754;
-  color: white;
-  transition: all linear 0.2s;
+.btn-get-employee {
+    padding: 1.6rem 3.2rem;
+    font-size: 1.6rem;
+    border-radius: 0.8rem;
+    background: #198754;
+    color: white;
+    transition: all linear 0.2s;
 }
 
-.btn-get-employee:hover{
-  background: green;
+.btn-get-employee:hover {
+    background: green;
 }
 
-.get-employees-list{
-  margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
-  display: flex;
-  flex-direction: column;
-  row-gap: 1.6rem;
-  padding: 1.6rem;
-
-}
-.get-employee-item{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.6rem;
-  row-gap: 1.6rem;
-  border-bottom: 1px solid black;
-  padding: 0.8rem;
-  /*column-gap: 4.8rem;*/
-}
-
-.employee-info{
-  flex: 1;
-  text-align: left ;
-}
-
-.email{
-  flex: 2;
-}
-
-.phone{
-  flex: 1.5;
-}
-
-.btn-delete{
-  padding: 0.8rem 2.4rem;
-  background: #ffc107;
-  font-size: 1.6rem;
-  transition: all linear 0.2s;
-  color: #fff;
+.get-employees-list {
+    margin-top: 3.2rem;
+    margin-bottom: 3.2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.6rem;
+    padding: 1.6rem;
 
 }
 
-.btn-delete:hover{
-  background: #dc3545;
+.get-employee-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.6rem;
+    row-gap: 1.6rem;
+    border-bottom: 1px solid black;
+    padding: 0.8rem;
+    /*column-gap: 4.8rem;*/
 }
 
-.btn-modify{
-  padding: 0.8rem 2.4rem;
-  background: #1567C2;
-  font-size: 1.6rem;
-  transition: all linear 0.2s;
-  color: #fff;
+.employee-infos {
+    flex: 1;
+    text-align: left;
+    padding: 0.8rem 0;
+}
+
+.email {
+    flex: 2;
+}
+
+.phone {
+    flex: 1.5;
+}
+
+.btn-delete {
+    padding: 0.8rem 2.4rem;
+    background: #ffc107;
+    font-size: 1.6rem;
+    transition: all linear 0.2s;
+    color: #fff;
 
 }
 
-.btn-modify:hover{
-  background: dodgerblue;
+.btn-delete:hover {
+    background: #dc3545;
+}
+
+.btn-modify {
+    padding: 0.8rem 2.4rem;
+    background: #1567C2;
+    font-size: 1.6rem;
+    transition: all linear 0.2s;
+    color: #fff;
+
+}
+
+.btn-modify:hover {
+    background: dodgerblue;
 }
 
 /*Get One Employee Id*/
-.get-employee-one{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 3.2rem;
-  row-gap: 3.2rem;
+.get-employee-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.2rem;
+    row-gap: 3.2rem;
 }
 
 
-.adding-one-input{
-  height: 3.2rem;
-  font-size: 1.6rem;
-  padding-left: 1.6rem;
+.adding-one-input {
+    height: 3.2rem;
+    font-size: 1.6rem;
+    padding-left: 1.6rem;
 
 }
 
-.btn-get-one-employee{
-  padding: 0.8rem 2.4rem;
-  background-color: #1567C2;
-  color: white;
-  font-size: 1.6rem;
+.btn-get-one-employee {
+    padding: 0.8rem 2.4rem;
+    background-color: #1567C2;
+    color: white;
+    font-size: 1.6rem;
 }
 
-.employee-info{
-  transition: all linear 0.2s;
-  text-align: center;
+.employee-info {
+    transition: all linear 0.2s;
+    text-align: center;
 }
 
-.employee-info-one{
-  font-size: 1.6rem;
-  padding: 1.6rem ;
+.employee-info-one {
+    font-size: 1.6rem;
+    padding: 1.6rem;
 }
 
-.usertie{
-  font-size: 4.8rem;
-  color: #1567C2;
+.usertie {
+    font-size: 4.8rem;
+    color: #1567C2;
 }

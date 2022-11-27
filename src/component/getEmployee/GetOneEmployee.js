@@ -10,7 +10,7 @@ const GetOneEmployee = () => {
         e.preventDefault();
         const id = e.target.empId.value;
         try {
-            const res = await axios.get(`http://localhost:8080/employees/${id}`);
+            const res = await axios.get(`https://springboot-homework.herokuapp.com/employees/${id}`);
             setEmployee(res.data);
             setShowInfo(true)
             toast.success("Get Employee Info Success");
@@ -38,7 +38,6 @@ const GetOneEmployee = () => {
                     <FaUserTie className="usertie"/>
                     <p className="employee-info-one">First Name: {employee.empFirstName}</p>
                     <p className="employee-info-one">Last Name: {employee.empLastName}</p>
-                    <p className="employee-info-one">Email: {employee.empEmail}</p>
                     <p className="employee-info-one">Email: {employee.empEmail}</p>
                     <p className="employee-info-one">Gender: {employee.empGender}</p>
                     <p className="employee-info-one">Phone Number: {employee.empPhoneNumber}</p>

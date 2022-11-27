@@ -57,15 +57,14 @@ const GetEmployee = () => {
                 {toggle ? (
                     <ul className="get-employees-list">
                         <li className="get-employee-item">
-
-                            <p className="employee-info">ID</p>
-                            <p className="employee-info email">Emp Email</p>
-                            <p className="employee-info">FName</p>
-                            <p className="employee-info">LName</p>
-                            <p className="employee-info">Gender</p>
-                            <p className="employee-info">Phone#</p>
-                            <p className="employee-info">Modify</p>
-                            <p className="employee-info">Delete</p>
+                            <p className="employee-infos">ID</p>
+                            <p className="employee-infos email">Emp Email</p>
+                            <p className="employee-infos">FName</p>
+                            <p className="employee-infos">LName</p>
+                            <p className="employee-infos">Gender</p>
+                            <p className="employee-infos phone">Phone#</p>
+                            <p className="employee-infos">Modify</p>
+                            <p className="employee-infos">Delete</p>
                         </li>
                         {employees.map((employee, index) => {
                             const {
@@ -78,17 +77,17 @@ const GetEmployee = () => {
                             } = employee;
                             return (
                                 <li key={index} className="get-employee-item">
-                                    <p className="employee-info">{empId}</p>
-                                    <p className="employee-info email">{empEmail}</p>
-                                    <p className="employee-info">{empFirstName}</p>
-                                    <p className="employee-info">{empLastName}</p>
-                                    <p className="employee-info">{empGender}</p>
-                                    <p className="employee-info phone">{empPhoneNumber}</p>
-                                    <p className="employee-info">
+                                    <p className="employee-infos">{empId}</p>
+                                    <p className="employee-infos email">{empEmail}</p>
+                                    <p className="employee-infos">{empFirstName}</p>
+                                    <p className="employee-infos">{empLastName}</p>
+                                    <p className="employee-infos">{empGender}</p>
+                                    <p className="employee-infos phone">{empPhoneNumber}</p>
+                                    <p className="employee-infos">
                                         <button onClick={() => handleModify(empId)} className="btn-modify"> Modify
                                         </button>
                                     </p>
-                                    <p className="employee-info">
+                                    <p className="employee-infos">
                                         <button onClick={() => handleDelete(empId)} className="btn-delete"> Delete
                                         </button>
                                     </p>
